@@ -10,6 +10,16 @@ h1
 	color: #66a3ff;
 	font-size: 40px;
 	font-weight: bold;
+	text-align: center;
+}
+
+h2
+{
+	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 2px;
+	text-align: center;
 }
 
 h3
@@ -20,6 +30,7 @@ h3
 	margin-top: 10px;
 	margin-bottom: 20px;
 	padding: 2px;
+	text-align: center;
 }
 
 #container
