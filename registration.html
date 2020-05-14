@@ -10,28 +10,28 @@
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
    </head>
    <body>
-      <div id="container" >
+      <article>
+      <div id="container-register" >
          <header>
             <h1>ISOP20 Online</h1>
             <h2>Internetowy System Obsługi Przedsiębiorcy</h2>
          </header>
          <form method ="post">
-            Adres e-mail: <br><input type="text" name="email"  maxlength="50" required /> <br>
-            Hasło: <br><input type="password" name="haslo1" required /> <br>
-            Powtórz hasło:<br> <input type="password" required/><br>
-            Imię:<br> <input type="text"  name="f_name" maxlength="30" required /> <br>
-            Nazwisko:<br> <input type="text"  name="l_name" maxlength="30" required /> <br>
-            Nazwa firmy :<br> <input type="text"  name="firm_name" maxlength="100" required /> <br>
-            NIP: <br><input type="text"  name="nip" maxlength="15" required /> <br>
-            Adres firmy: <br><input type="text"  name="addres" maxlength="30" required /> <br>
-            Kod pocztowy: <br><input type="text"  name="pcode" maxlength="10" required /> <br>
-            <label><input type="checkbox" name="regulamin" />
-            Akceptuje regulamin</label><br>
-            <br><input type="submit" value="Rejestracja!" onclick="window.location='registered.html';"/>
-
+            <p class="register-field">Adres e-mail: <br/><input type="text" name="email"  maxlength="50" required /></p> 
+            <p class="register-field">Hasło: <br/><input type="password" name="haslo1" required /> </p> 
+            <p class="register-field">Powtórz hasło:<br/> <input type="password" required/></p> 
+            <p class="register-field">Imię:<br> <input type="text"  name="f_name" maxlength="30" required /> </p> 
+            <p class="register-field">Nazwisko:<br> <input type="text"  name="l_name" maxlength="30" required /> </p> 
+            <p class="register-field">Nazwa firmy :<br> <input type="text"  name="firm_name" maxlength="100" required /> </p> 
+            <p class="register-field">NIP: <br><input type="text"  name="nip" maxlength="15" required /> </p> 
+            <p class="register-field">Adres firmy: <br><input type="text"  name="addres" maxlength="30" required /> </p> 
+            <p class="register-field">Kod pocztowy: <br><input type="text"  name="pcode" maxlength="10" required /> </p> 
+            <p class="register-field"><input type="checkbox" name="regulamin" />Akceptuje regulamin</p> 
+            <p class="register-field"><br><input type="submit" value="Rejestracja!" onclick="window.location='registered.html';"/></p> 
          </form>
 		 <br>
       </div>
+   </article>
       <!--<footer>Kicior Vision Limited 2020 &copy </footer>-->
    </body>
 </html>
