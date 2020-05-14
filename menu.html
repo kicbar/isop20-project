@@ -13,15 +13,50 @@
    </head>
    <body>
       <h1><b>ISOP20 Online</b></h1>
-      <nav class = "menu">
+   <nav class="menu">
          <ul class="menu-list">
-            <li class="menu-list-item"><a href = "#main">Strona Główna</a></li>
-            <li class="menu-list-item"><a href = "#factures">Faktury</a></li>
-            <li class="menu-list-item"><a href = "#clients">Kontrahenci</a></li>
-            <li class="menu-list-item"><a href = "#warehouse">Magazyn</a></li>
-            <li class="menu-list-item"><a href = "#workers">Pracownicy</a></li>
-            <li class="menu-list-item"><a href = "index.html">LogOut</a></li>
+            <li class="menu-list-item"><a class="menu__link link menu__link--active"   href="#main">Główna</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#factures">Faktury</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#clients">Kontrahenci</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#orders">Zamówienia</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#products">Magazyn</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#workers">Kadry i płace</a></li>
+            <li class="menu-list-item"><a class="menu__link link" 				      	href="#financials">Księga podatkowa</a></li>
+            <li class="menu-list-item"><a class="menu__link_log link"                  href="index.html">LogOut</a></li>
          </ul>
       </nav>
+      <!--======================================================================================GŁÓWNA=============-->
+      <section class="sect_glowna content content--active" id="main" >
+         <article class="art_main">main</article>
+      </section>
+
+      <!--======================================================================================FAKTURY============-->
+      <section class="sect_faktury content " id="factures">
+         <article>factures</article>
+      </section>
+
+      <!--======================================================================================KONTRAHENCI========-->
+      <section class="sect_klienci content " id="clients">
+         <article>clients</article>
+      </section>
+
+      <!--======================================================================================MAGAZYN============-->
+      <section class="sect_product content " id="products">
+         <article>products</article>
+      </section>
+      
+      <!--======================================================================================ORDER==============-->
+      <section class="sect_zamowienia content " id="orders">
+         <article>orders</article>
+      </section>
+
+      <!--======================================================================================WORKER=============-->
+      <section class="sect_pracownicy content " id="workers">
+         <article>workers</article>
+      </section>
+      <!--======================================================================================WORKER=============-->
+      <section class="sect_ksiega_podatkowa content " id="financials" >
+         <article>financials</article>
+      </section>
    </body>
 </html>
