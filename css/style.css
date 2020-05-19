@@ -253,6 +253,28 @@ p.section_name
   height: auto;
 }
 
+details
+{
+	font-size: 15px;
+	margin: 10px;
+}
 
+.details-header
+{
+	font-size: 25px;
+	width: fit-content;
+}
 
+.details-header:hover
+{
+	cursor: pointer;
+}
 
+.details-content
+{
+	font-size: 25px;
+	width: fit-content;
+	padding: 5px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
