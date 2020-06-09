@@ -47,7 +47,7 @@
             <li class="menu-list-item"><a class="menu__link link" 				      	href="#products"><p class="section_name">Produkty</p></a></li>
             <li class="menu-list-item"><a class="menu__link link" 				      	href="#workers"><p class="section_name">Pracownicy</p></a></li>
             <li class="menu-list-item"><a class="menu__link link" 				      	href="#warehouse"><p class="section_name">Magazyn</p></a></li>
-            <li class="menu-list-item"><a class="menu__link_log link"                  href="index.html"><p class="section_name">LogOut</p></a></li>
+            <li class="menu-list-item"><a class="menu__link_log link"                  href="index.php"><p class="section_name">LogOut</p></a></li>
          </ul>
       </nav>
       <!--======================================================================================GŁÓWNA=============-->
@@ -80,10 +80,28 @@
       </section>
 
       <!--======================================================================================KONTRAHENCI========-->
-      <section class="sect_klienci content " id="clients">
+      <section class="sect_klienci content " id="clients" style="margin: auto;">
          <details>
 				<summary class = "details-header">Wprowadź klienta</summary>
-            <div  class = "details-content">wprowadz content</div>
+               <div class="srodek">
+               <form method ="post">
+					   <table class="table_insert" border="2">
+						   <tr>
+							   <th class="table_insert_header">Imię</th>
+							   <th class="table_insert_header">Nazwisko</th>
+							   <th class="table_insert_header">Pesel</th>
+							   <th class="table_insert_header">Data dodania</th>
+						   </tr>
+						   <tr>
+							   <td><input type="text" name="fname" maxlength="30" required /> </td>
+							   <td><input type="text" name="lname" maxlength="30" required /> </td>
+							   <td><input type="text" name="pesel" minlength="11" maxlength="11" required /> </td>
+							   <td><input type="date" name="date_add_client"  maxlength="10" required /> </td>
+						   </tr>
+					   </table>
+					   <input type="submit" value="Zapisz dane" name="save_client" style="width: 200px"/>
+               </form>
+</div>
 			</details>
          <details>
 				<summary class = "details-header">Edytuj klienta</summary>

@@ -25,7 +25,7 @@
                <form action="verficiation.php" method="post">
                   <input type="text" name="email_log" placeholder="E-mail"/> 
                   <input type="password" name="haslo" placeholder="Hasło"/>
-                  <input type="submit" onclick="window.location='menu.php';" value="Przejdź do serwisu"/>
+                  <input type="submit"  value="Przejdź do serwisu"/>
                </form>
             </div>
             <div id="rightsquare">
