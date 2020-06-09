@@ -22,11 +22,11 @@
          <div id="container">
             <div id="leftsquare">
                <h3>Logowanie</h3>
-               <!--<form action="verficiation.php" method="post">-->
+               <form action="verficiation.php" method="post">
                   <input type="text" name="email_log" placeholder="E-mail"/> 
                   <input type="password" name="haslo" placeholder="Hasło"/>
-                  <input type="submit" onclick="window.location='menu.html';" value="Przejdź do serwisu"/>
-               <!--</form>-->
+                  <input type="submit" onclick="window.location='menu.php';" value="Przejdź do serwisu"/>
+               </form>
             </div>
             <div id="rightsquare">
                <h3>O Projekcie</h3>
