@@ -83,9 +83,8 @@
       <section class="sect_klienci content " id="clients" style="margin: auto;">
          <details>
 				<summary class = "details-header">Wprowadź klienta</summary>
-               <div class="srodek">
                <form method ="post">
-					   <table class="table_insert" border="2">
+					   <table class="table_insert">
 						   <tr>
 							   <th class="table_insert_header">Imię</th>
 							   <th class="table_insert_header">Nazwisko</th>
@@ -93,15 +92,14 @@
 							   <th class="table_insert_header">Data dodania</th>
 						   </tr>
 						   <tr>
-							   <td><input type="text" name="fname" maxlength="30" required /> </td>
-							   <td><input type="text" name="lname" maxlength="30" required /> </td>
-							   <td><input type="text" name="pesel" minlength="11" maxlength="11" required /> </td>
-							   <td><input type="date" name="date_add_client"  maxlength="10" required /> </td>
+							   <td class="table_insert_field"><input type="text" name="fname" maxlength="30" required /> </td>
+							   <td class="table_insert_field"><input type="text" name="lname" maxlength="30" required /> </td>
+							   <td class="table_insert_field"><input type="text" name="pesel" minlength="11" maxlength="11" required /> </td>
+							   <td class="table_insert_field"><input type="date" name="date_add_client"  maxlength="10" required /> </td>
 						   </tr>
 					   </table>
-					   <input type="submit" value="Zapisz dane" name="save_client" style="width: 200px"/>
+					   <input class = "submit_save" type="submit" value="Zapisz dane" name="save_client"/>
                </form>
-</div>
 			</details>
          <details>
 				<summary class = "details-header">Edytuj klienta</summary>
