@@ -1,22 +1,25 @@
-<php
-   try
-      {
-         $connection = oci_connect("esop_db","aneta","localhost/XE");
-         if(!$connection)
-			{
-				$e = oci_error();
-				trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-			}
-
+<?php
+	session_start();
+	try
+	{
+		$connection = oci_connect("isop","passwd123","localhost/XE");
+			
+		if(!$connection)
+		{				
+            $error = oci_error();
+			trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+		}
+        else 	
+    	{	
+         /*DO STH WITH DATABASE*/
       }
-   catch(Exception $e)
-      {
-         echo '<span style="color: red">Błąd łączenia z serwerem.</span>';
-         echo '<br/> For dev info: '.$e;
-      }
-
-
-
+	}
+		
+	catch(Exception $error)
+	{
+		echo '<span style="color: red">Błąd łączenia z serwerem.</span>';
+		echo '<br/> For dev info: '.$error;
+	}
 ?>
 
 <!DOCTYPE HTML>

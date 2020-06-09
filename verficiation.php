@@ -11,13 +11,15 @@
 		}
         else 	
     	{	
-            echo 'connected</br>'; 
+            header('Location: menu.php');
+            /*echo 'connected</br>'; 
             $sql_check_connection = "select fname from clients where pesel = '95012309090' ";
             $sql_check_connection_compiled = oci_parse($connection, $sql_check_connection);
             oci_execute($sql_check_connection_compiled); 
             $get_fname = oci_fetch_object($sql_check_connection_compiled);
             $fname_client = $get_fname->FNAME;
             echo 'Fname from database is: '.$fname_client;
+            oci_free_statement($sql_check_connection_compiled);*/
             oci_close($connection);
         }
 	}
